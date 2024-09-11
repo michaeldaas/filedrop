@@ -3,6 +3,16 @@
 	<title>Upload</title>
     <link href="static/css/dropzone.min.css" type="text/css" rel="stylesheet" />
   <script src="static/js/dropzone.min.js"></script>
+  <style>
+    .header {text-align: center;}
+    .note {text-align: center;
+        color: #8a8989;}
+    body {background-color: #181a1b;
+          color: #e8e6e3;
+          margin: 50px}
+    form.dropzone {background-color: #28353b;
+          color: #b3b1ae;}
+    </style>
 </head>
 <body>
     <form action="{{ request.headers.get('X-Mount', default='/') }}" class="dropzone"></form>
